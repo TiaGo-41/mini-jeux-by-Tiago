@@ -26,7 +26,7 @@ app.get('/users', (req, res) => {
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
-const API_URL = "https://ton-serveur.onrender.com";
+const API_URL = "https://mini-jeux-by-tiago.onrender.com";
 
 // Example: Fetch all users
 fetch(`${API_URL}/users`)
