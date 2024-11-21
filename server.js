@@ -25,3 +25,13 @@ app.get('/users', (req, res) => {
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+const API_URL = "https://ton-serveur.onrender.com";
+
+// Example: Fetch all users
+fetch(`${API_URL}/users`)
+  .then((res) => res.json())
+  .then((users) => {
+    console.log(users);
+  });
+
